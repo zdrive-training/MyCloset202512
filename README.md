@@ -3,7 +3,7 @@
 
 ## インターフェース概要
 
-### ClotheMapper
+### ClothesMapper
 | メソッド | 説明 |
 | --- | --- |
 | selectAll() | 衣服リストの取得 |
@@ -13,7 +13,7 @@
 | update(Clothes clothes) | 衣服情報の更新 |
 | deleteById(Integer id) | 衣服情報の削除 |
 
-### ClotheService
+### ClothesService
 | メソッド | 説明 |
 | --- | --- |
 | List<Clothes> getClothesList() | 衣服リストの取得 |
