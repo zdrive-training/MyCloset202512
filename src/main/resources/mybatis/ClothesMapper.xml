@@ -11,6 +11,11 @@
 		SELECT * FROM clothes
 		WHERE id = #{id}
 	</select>
+	
+	<select id="selectByCategory" resultType="Clothes">
+		SELECT * FROM clothes
+		WHERE category_id = #{categoryId}
+	</select>
 
 </mapper>
 
