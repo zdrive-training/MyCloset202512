@@ -7,4 +7,9 @@
 		SELECT * FROM clothes
 	</select>
 
+	<select id="selectById" resultType="Clothes">
+		SELECT * FROM clothes
+		WHERE id = #{id}
+	</select>
+		
 </mapper>
