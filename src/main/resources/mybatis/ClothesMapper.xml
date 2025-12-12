@@ -4,11 +4,11 @@
 <mapper namespace="com.example.app.mapper.ClothesMapper">
 
 	<select id="selectAll" resultType="Clothes">
-		SELECT id, name FROM clothes
+		SELECT id, name, size FROM clothes
 	</select>
 	
 	<select id="selectById" resultType="Clothes">
-		SELECT * FROM clothes
+		SELECT id, name, size FROM clothes
 		WHERE id = #{id}
 	</select>
 	
