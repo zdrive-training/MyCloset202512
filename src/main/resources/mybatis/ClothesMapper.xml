@@ -3,7 +3,15 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.app.mapper.ClothesMapper">
 
- <select  id="selectAll" resultType="">
- </select>
+	<select id="selectAll" resultType="">
+		SELECT * FROM clothes
+		
+	</select>
+
+	<select id="selectById" resultType="Clothes">
+		SELECT * FROM clothes
+		WHERE id = #{id}
+
+	</select>
 
 </mapper>
