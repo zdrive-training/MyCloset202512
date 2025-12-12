@@ -8,7 +8,13 @@
 
 	<select id="slectById" resultType="Clothes">
 		select*from clothes
-		where id=#{id}
+		where
+		id=#{id}
+	</select>
+
+	<select id="selectByCategory" resultType="Clothes">
+		select*from clothes
+		where category_id=#{categoryId}
 	</select>
 
 </mapper>
