@@ -6,4 +6,9 @@
 		select*from clothes
 	</select>
 
+	<select id="slectById" resultType="Clothes">
+		select*from clothes
+		where id=#{id}
+	</select>
+
 </mapper>
